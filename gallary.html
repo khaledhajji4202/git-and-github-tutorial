@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Gallary</title>
+    <style>
+        div.gallary {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        div.gallary-item{
+            margin:5px;
+            border: 1px solid #ccc;
+        }
+        div.gallary-item:hover{
+            border:1px solid #777;
+        }
+        div.gallary-item img{
+            width:100%;
+            height:auto;
+        }
+        div.gallary-item div.desc{
+            padding:15px;
+            text-align:center;
+        }
+
+        @media only screen and (max-width:800px) {
+            div.gallary-item {
+                width: calc(50% - 20px);}
+            }
+        @media only screen and (max-width:500px) {
+            div.gallary-item {
+                width: calc(100% - 20px);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gallary">
+        <div class="gallary-item">
+            <a href="img_5terre.jpg" target="_blank">
+                <img src="img_5terre.jpg" alt="Cinque Terre" width="400" height="200">
+            </a>
+            <div class="desc">Cinque Terre</div>
+        </div>
+        <div class="gallary-item">
+            <a href="img_forest.jpg" target="_blank">
+                <img src="img_forest.jpg" alt="Forest" width="400" height="200">
+
+            </a>
+            <div class="desc">Green Forest</div>
+        </div>
+        <div class="gallary-item">
+            <a href="img_mountains.jpg" target="_blank">
+                <img src="img_mountains.jpg" alt="Mountains" width="400" height="200">
+
+            </a>
+            <div class="desc">Mountains</div>
+        </div>
+    </div>
+</body>
+</html>

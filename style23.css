@@ -1,0 +1,12 @@
+.parent {
+    background-color:red;
+    height:100px;
+    position:relative;
+}
+.child {
+    width:64px;
+    height:64px;
+    background-color: green;
+    position:absolute;
+    right:50%;
+}

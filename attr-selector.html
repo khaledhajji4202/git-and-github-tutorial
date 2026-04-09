@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribut-selectors</title>
+    <style>
+        a[target="_blank"] {
+            background-color: yellow;
+        }
+        [title~="flower"]{
+            border:5px solid yellow;
+        }
+        [class|=top]{
+            background-color: blue;;
+        }
+        input[type="text"] {
+            width:150px;
+            padding:6px;
+            margin-bottom: 10px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS [attribute] Selector</h2>
+
+<p>Select and style the links with a target attribute:</p>
+
+<a href="https://www.w3schools.com" target="_blank">w3schools.com</a>
+<a href="https://www.w3schools.com/css/">CSS</a>
+<a href="https://www.w3schools.com/html/" target="_blank">HTML</a>
+<br><br>
+<img src="klematis.jpg" title="klematis flower" width="150" height="113">
+<img src="img_flwr.gif" title="flower" width="224" height="162">
+<img src="img_tree.gif" title="tree" width="200" height="358">
+<p class="top">welcome</p>
+<p class="top-text">hello world!</p>
+<form  name="input"action="" method="get">
+    Firstname: <input type="text" name="Name" value="peter" size="20">
+</form>
+</body>
+</html>

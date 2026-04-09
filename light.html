@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>My First JavaScript</h1>
+        <p>Here, a JavaScript changes the value of the 
+            src (source) attribute of an image</p>
+            <script>
+                function light(sw) {
+                    var pic;
+                    if (sw == 0) {
+                        pic = "https://i.pinimg.com/originals/bf/f9/e5/bff9e5fc29d5382b7884130d35730418.gif"
+                    }
+                    else {
+                        pic = "https://www.bing.com/ck/a?!&&p=909bf647e54993b7591bd6b9eacb41cd982795f66521079ee27adb9557d47bf5JmltdHM9MTc2MjgxOTIwMA&ptn=3&ver=2&hsh=4&fclid=13589449-fb6c-60b3-3c91-8171fa3b61d3&u=a1L2ltYWdlcy9zZWFyY2g_cT1waWNfYnVsYm9uLmdpZiZpZD00NURFOTVDNERDRTBEOUM0NUVFRTQxQTdDNzA5MTJGNkIxNDA4N0VFJkZPUk09SUFDRklS&ntb=1"
+
+                    }
+                    document.getElementById('myImage').src = pic;
+                }
+            </script>
+            <img id="myimage" src="https://i.pinimg.com/originals/bf/f9/e5/bff9e5fc29d5382b7884130d35730418.gif"
+            width="100" height="180">
+            <p>
+                <button type="button" onclick="light(1)">Light On</button>
+                <button type="button" onclick="light(0)">Light off</button>
+            </p>
+    </body>
+</html>

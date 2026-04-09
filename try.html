@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Divaders</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse:collapse;
+        }
+        th,td {
+            padding:15px;
+
+        }
+        table{
+            border-spacing: 20px;
+        }
+        th{
+            text-align:left
+        }
+        tr:nth-child(even){
+            background-color: rgba(150, 212, 212, 0.5);
+        }
+        td:nth-child(even),th:nth-child(even){
+            background-color: rgba( 150, 212, 212,0.5)
+        }
+        th:hover { background-color:rgba( 150, 2, 21,0.5);}
+        td:hover{background-color:rgba( 150, 2, 21,0.5);}
+        
+
+    </style>
+</head>
+<body>
+    <table style="width:100%">
+        <CAPTION>Report!!</CAPTION>
+        <colgroup>
+            <col span="1" style="background-color: #F4A002">
+            <col span="2" style="background-color:lawngreen">
+            <col span="1" style="visibility:collapse;">
+        </colgroup>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Savings</th>
+                <th>Age</th>
+            </tr>
+        
+       
+            <tr>
+                <td>Peter</td>
+                <td>Griffin</td>
+                <td>$100</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Lois</td>
+                <td>Griffin</td>
+                <td>$150</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Joe</td>
+                <td>Swanson</td>
+                <td>$300</td>
+                <td>27</td>
+            </tr>
+            
+        
+    </table>
+</body>
+</html>

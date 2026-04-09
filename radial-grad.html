@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Grad</title>
+    <style>
+        #grad1{
+            height: 150px;
+            width: 200px;
+            background-image: radial-gradient(red,yellow,green);
+        }
+        #grad2{
+            height: 150px;
+            width: 200px;
+            background-image: radial-gradient(circle,red 5%,yellow 15%,green 60%);
+        }
+        #grad3{
+            height: 150px;
+            width: 350px;
+           
+            background-image: radial-gradient(closest-side at 70% 60%,red,yellow,black);
+        }
+        #grad4{
+            height: 150px;
+            width: 350px;
+            background-image: radial-gradient
+            (farthest-side at 70% 60%,red,yellow,black);
+        }
+        #grad7{
+            height: 150px;
+            width: 200px;
+            background-image: repeating-radial-gradient(red,yellow 10%,green 15%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Radial Gradient - Evenly Spaced Color Stops</h1>
+    <div id="grad1"></div>
+    <br><br>
+    <div id="grad2"></div>
+    <br><br>
+    <div id="grad3"></div>
+    <br><br>
+    <div id="grad4"></div>
+    <br><br>
+    <div id="grad5"></div>
+    <br><br>
+    <div id="grad6"></div>
+    <br><br>
+    <div id="grad7"></div>
+</body>
+</html>

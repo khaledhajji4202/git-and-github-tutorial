@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Counters</title>
+    <style>
+        body {
+            counter-reset: section;
+        }
+        h2::before {
+            counter-increment: section;
+            content: "section" counter(section) ": ";
+        }
+        ol {
+            counter-reset: section;
+            list-style-type: none;
+        }
+        li::before {
+            counter-increment: section;
+            content: counters(section,".") " ";
+        }
+
+        h1 {
+            counter-reset: subsection;
+        }
+        h1::before {
+            counter-increment: section;
+            content: "section" counter(section) ".";
+        }
+        h3::before {
+            counter-increment: subsection;
+            content: counter(section) "." counter(subsection) " ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Using CSS Counters</h1>
+
+<h2>HTML Tutorial</h2>
+<p>Some description here...</p>
+
+<h2>CSS Tutorial</h2>
+<p>Some description here...</p>
+
+<h2>JavaScript Tutorial</h2>
+<p>Some description here...</p>
+
+<h2>Python Tutorial</h2>
+<p>Some description here...</p>
+
+<h2>SQL Tutorial</h2>
+<p>Some description here...</p>
+
+<p>List 1:</p>
+<ol>
+    <li>item</li>
+    <li>item
+        <ol>
+            <li>item</li>
+            <li>item</li>
+            <li>item
+                <ol>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                </ol>
+            </li>
+            <li>item</li>
+        </ol>
+    </li>
+    <li>item</li>
+    <li>item</li>
+</ol>
+
+<h1>HTML/CSS Tutorials</h1>
+<h3>HTML</h3>
+<h3>CSS</h3>
+<h3>Bootstrap</h3>
+<h3>W3.CSS</h3>
+
+<h1>Scripting Tutorials</h1>
+<h3>JavaScript</h3>
+<h3>jQuery</h3>
+<h3>React</h3>
+
+<h1>Programming Tutorials</h1>
+<h3>Python</h3>
+<h3>Java</h3>
+<h3>C++</h3>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-Opacity</title>
+    <style>
+        img {
+            opacity: 50%;
+        }
+        img:hover {
+            opacity: 0.1;
+        }
+        div.background {
+            background:url(klematis.jpg) repeat;
+            border:2px solid black;
+        }
+        div.transbox {
+            margin:30px;
+            background-color: rgba(255,255,255,0.6);
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>The Opacity property</h2>
+    <p>The lower the value the more transparent</p>
+    <p>image with different opacity values.</p>
+    <img src="img_forest.jpg" alt="forest" width="170" height="100">
+    <img src="img_5terre.jpg" alt="italy" width="170" height="100">
+    <img src="img_mountains.jpg" alt="mountains" width="170" height="100">
+    <br><br>
+    
+    <div class="background">
+        <div class="transbox">
+            <p>This is some text that is placed in the transparent box</p>
+        </div>
+    </div>
+</body>
+</html>

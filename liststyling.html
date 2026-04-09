@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list styling</title>
+    <style>
+        ul {
+            background:powderblue;
+            padding:15px;
+        }
+       
+        
+        ul.a {
+            list-style: circle inside;
+        }
+         ul.a li {
+            background:mistyrose;
+            padding:15px;
+            margin:15px;
+            border:1px dotted #000;
+        }
+        ul.b {
+            list-style:disc inside;
+            
+            
+        }
+        ul.b li {
+            background:blueviolet;
+            padding:15px;
+            margin:15px;
+            border:1px dashed #000;
+        }
+        ul.c {
+            
+            list-style:square inside;
+        }
+        ul.c li {
+            background:darkorange;
+            padding:15px;
+            border:1px solid #000;
+            margin:15px;
+        }
+        ol {
+            background:salmon;
+            padding:15px;
+        }
+        ol.d {
+            list-style-type:upper-roman inside;
+        }
+        ol.d li {
+            background:bisque;
+            padding:20px;
+            margin:20px;
+            border:1px dashed #000;
+        }
+        ol.e {
+            list-style-type:lower-roman inside;
+        }
+        ol.e li {
+            background:gold;
+            padding:15px;
+            margin:15px;
+            border:1px ridge #000;
+        }
+        ol.f {
+            list-style-type:upper-alpha;
+        } 
+         ol.f li {
+            background:lawngreen;
+            padding:15px;
+            margin:15px;
+            border:2px double #000;
+        } 
+
+        ol.g {
+            list-style-type:decimal;
+        }  
+         ol.g li {
+            background:cornflowerblue;
+            padding:15px;
+            margin:15px;
+            border: 1px solid #000;
+        }     
+
+    </style>
+</head>
+<body>
+    <h2>The list-style type property</h2>
+    <p>Example of an unordered lists:</p>
+    <ul class="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+
+    </ul>
+    <ul class="b">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca-cola</li>
+    </ul>
+     <ul class="c">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca-cola</li>
+    </ul>
+    <p>Example of ordered list</p>
+    <ol class="d">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca-cola</li>
+    </ol>
+     <ol class="e">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca-cola</li>
+    </ol>
+    <ol class="f">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca-cola</li>
+    </ol>
+    <ol class="g">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca-cola</li>
+    </ol>
+</body>
+</html>

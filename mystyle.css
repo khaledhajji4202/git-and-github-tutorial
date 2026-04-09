@@ -1,0 +1,30 @@
+body {
+    height:300vh;
+}
+
+.box {
+    width:200px;
+    border:8px solid red;
+    padding:16px;
+    margin:16px;
+    box-sizing:border-box; 
+}
+.parent {
+    background-color:red;
+   
+    height:200px;
+    position:sticky;
+    top:0;
+    
+
+
+}
+.child {
+    background-color:green;
+    width:70px;
+    height:70px;
+    position:absolute;
+    
+    top:0;
+    right:0;
+}

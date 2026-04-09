@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Math Functions</title>
+    <style>
+        #div1 {
+            width: max(50%, 300px);
+            height: calc(30vh + 50px);
+            margin: auto;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        h2 {
+            font-size: clamp(2rem, 2.5vw, 3.5rem);
+        }
+        p {
+            font-size: clamp(1rem, 2.5vw, 2.5rem);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>The calc() Function</h2>
+    <p>The width of #div1 is set to 100% minus 100px for padding. This ensures that the #div1 takes up 100% of the
+        container's width, with an offset of 50px on each side (with margin: auto;).</p>
+
+    <p>The height of #div1 is set to 30% of the height of the viewport + 50px.</p>
+
+    <p>Use max() to set the width of #div1 to whichever is largest: 50% or 300px.</p>
+
+    <div id="div1">Some text...</div>
+
+    <h2>The clamp() Function</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac laoreet quam, id aliquet nisl. Etiam id eros
+        ligula. Aenean euismod, enim sed mollis feugiat, magna massa cursus leo, ut maximus metus eros non ante.
+        Praesent eget tincidunt mauris, ut euismod ipsum. In hac habitasse platea dictumst. In dapibus tortor magna,
+        elementum elementum neque sagittis id. Integer vestibulum semper dui, quis finibus libero elementum nec.</p>
+
+</body>
+
+</html>

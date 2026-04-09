@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display property</title>
+    <style>
+        #panel, .flip {
+            padding:10px;
+            text-align:center;
+            background-color:#a6d8a8;
+            color:white;
+            border:solid 1px #a6d8a8;
+            margin:auto;
+            cursor:pointer;
+        }
+        #panel {
+            display: none;
+            cursor:auto;
+        }
+        ul {
+            list-style-type:none;
+            padding:0;
+            margin:0;
+            
+            
+            cursor:auto;
+        }
+        li {
+            display:inline;
+        }
+    </style>
+</head>
+<body>
+   <p class="flip"
+   onclick="myFunction()">Click to show panel</p>
+   
+   <div id="panel">
+     <p>This panel contains a div element, which is hidden by default (display: none).</p>
+  <p>We use JavaScript to show it (display: block).</p>
+
+  
+  <p>How it works: When the user clicks on the p element, a function called myFunction() is executed, 
+    which changes the style of the div with id="panel" from display:none (hidden) to display:block (visible).</p>
+  <p>You will learn more about JavaScript in our JavaScript Tutorial.</p>
+
+   </div>
+   <script>
+    function myFunction() {
+        var x =
+        document.getElementById("panel");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+   </script>
+   <p>Display a list of links as a horizontal menu:</p>
+   <ul>
+    <li><a href="#home"></a>Home</li>
+    <li><a href="#news"></a>News</li>
+    <li><a href="#contact"></a>Contact</li>
+    <li><a href="#about"></a>About</li>
+   </ul>
+</body>
+</html>
